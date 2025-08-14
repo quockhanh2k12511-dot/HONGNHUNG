@@ -20,10 +20,10 @@
    	margin: 0;
     	padding: 0;
     	background-image: url("Nhung.jpg"); /* đường dẫn tới ảnh */
-    	background-size: contain; /* giữ nguyên tỉ lệ ảnh */
+    	background-size: cover; /* giữ nguyên tỉ lệ ảnh */
     	background-repeat: no-repeat; /* không lặp lại ảnh */
     	background-position: center center; /* căn giữa ảnh */
-    	background-attachment: fixed;
+    	background-attachment: scroll;
     }
     .background-img{
 	position: fixed;
@@ -114,8 +114,8 @@
         }, 50);
 
         // Sau 2s hiển thị câu tiếp
-        let delay = 3000;
-        if (index === messages.length - 1) delay = 5000; // Câu cuối chờ 5s
+        let delay = 4000;
+        if (index === messages.length - 1) delay = 6000; // Câu cuối chờ 5s
         index = (index + 1) % messages.length;
         setTimeout(showMessage, delay);
     }
